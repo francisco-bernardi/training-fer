@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tirada de Tarot</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Tirada de Tarot</h1>
+    </header>
+    <section>
+        <div id="cartas">
+            <p>Seleccione 3 números del 0 al 21: <input type="number" name="txtn" id="txtn">
+            <input type="button" value="Agregar carta" onclick="agregarCarta()"></p>
+            <select name="cartas" id="selcartas" size="10">
+                <option>Preparando tirada...</option>
+            </select>
+            <br><br><input type="button" value="Tirada" onclick="tirada()">
+        </div>
+        <div id="res">
+            <img id="img1" src="" alt="Arcano 1" >
+            <img id="img2" src="" alt="Arcano 2" >
+            <img id="img3" src="" alt="Arcano 3" >
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Curso em Vídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
